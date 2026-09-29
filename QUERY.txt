@@ -1,0 +1,19 @@
+QUERY1
+
+SELECT  c.numerotessera, c.nome, c.cognome FROM cliente c JOIN donazassociazione d ON c.numerotessera=d.donatore JOIN associazione a ON a.nome=d.associazione
+where a.tipologia = 'religiosa' 
+GROUP BY c.numerotessera, c.nome, c.cognome
+HAVING COUNT(*) > (
+	SELECT COUNT(*) FROM donazassociazione d JOIN associazione a ON d.associazione = a.nome
+	WHERE d.donatore = c.numerotessera
+	AND a.tipologia ='volontario'
+	GROUP BY c.numerotessera
+)
+
+QUERY2
+SELECT numerotessera, nome, cognome FROM cliente c join donazassociazione d on c.numerotessera = d.donatore
+WHERE d.donatore NOT IN (
+	SELECT d.donatore FROM donazassociazione d join associazione a on d.associazione = a.nome
+	WHERE tipologia = 'volontario'
+)
+GROUP BY numerotessera
