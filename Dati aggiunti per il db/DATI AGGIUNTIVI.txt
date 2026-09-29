@@ -1,0 +1,28 @@
+ASSOCIAZIONE
+
+INSERT INTO associazione(nome, descrizione, tipologia, recapito, puntiminimi)VALUES ('5 per mille', 'dona per noi grazie', 'volontario', '3331112229', 200);
+INSERT INTO associazione(nome, descrizione, tipologia, recapito, puntiminimi)VALUES ('10 per mille', 'dona per noi grazie', 'volontario', '3331112228', 1000);
+INSERT INTO associazione(nome, descrizione, tipologia, recapito, puntiminimi)VALUES ('Parocchia', 'dona per noi grazie', 'religiosa', '3331112227', 570);
+INSERT INTO associazione(nome, descrizione, tipologia, recapito, puntiminimi)VALUES ('San Paolo', 'dona per noi grazie', 'religiosa', '3331112226', 540);
+INSERT INTO associazione(nome, descrizione, tipologia, recapito, puntiminimi)VALUES ('Associazione Alpini', 'dona per noi grazie', 'sportiva', '3331112219', 1020);
+INSERT INTO associazione(nome, descrizione, tipologia, recapito, puntiminimi)VALUES ('San Protaso', 'dona per noi grazie', 'religiosa', '3331112221', 20);
+
+DONAZCLIENTE
+INSERT INTO donazcliente (codiceD, data, punti, donatore, supermercato, beneficiario) VALUES ('12345', '24-02-2020',500, '9876543210', 'Via Losanna 20', '9876543213');
+INSERT INTO donazcliente (codiceD, data, punti, donatore, supermercato, beneficiario) VALUES ('12346', '12-02-2020',1500, '9876543210', 'Via Piave 38', '9876543214');
+INSERT INTO donazcliente (codiceD, data, punti, donatore, supermercato, beneficiario) VALUES ('12347', '01-11-2020',1000, '9876543211', 'Via Monte Rosa 1', '9876543212');
+INSERT INTO donazcliente (codiceD, data, punti, donatore, supermercato, beneficiario) VALUES ('12348', '01-09-2020',500, '9876543211', 'Via Monte Rosa 1', '9876543210');
+
+
+DONAZASSOCIAZIONE
+INSERT INTO donazassociazione (codiceD, data, punti, donatore, supermercato, associazione) VALUES ('12340', '24-02-2019',580, '9876543210', 'Via Losanna 20', 'Parocchia');
+INSERT INTO donazassociazione (codiceD, data, punti, donatore, supermercato, associazione) VALUES ('12341', '12-03-2020',1020, '9876543210', 'Via Piave 38', 'Associazione Alpini');
+INSERT INTO donazassociazione (codiceD, data, punti, donatore, supermercato, associazione) VALUES ('12342', '01-10-2020',1000, '9876543211', 'Via Monte Rosa 1', 'San Paolo');
+INSERT INTO donazassociazione (codiceD, data, punti, donatore, supermercato, associazione) VALUES ('12343', '12-09-2020',30, '9876543211', 'Via Monte Rosa 1', 'San Protaso');
+INSERT INTO donazassociazione (codiceD, data, punti, donatore, supermercato, associazione) VALUES ('12344', '10-09-2020',200, '9876543211', 'Via Monte Rosa 1', '5 per mille');
+INSERT INTO donazassociazione (codiceD, data, punti, donatore, supermercato, associazione) VALUES ('12339', '11-09-2018',520, '9876543212', 'Via Losanna 20', '5 per mille');
+INSERT INTO donazassociazione (codiceD, data, punti, donatore, supermercato, associazione) VALUES ('12338', '11-11-2019',1100, '9876543212', 'Via Losanna 20', '10 per mille');
+INSERT INTO donazassociazione (codiceD, data, punti, donatore, supermercato, associazione) VALUES ('12337', '02-12-2020',1020, '9876543213', 'Via Piave 38', 'Associazione Alpini');
+INSERT INTO donazassociazione (codiceD, data, punti, donatore, supermercato, associazione) VALUES ('12336', '12-12-2020',40, '9876543213', 'Via Monte Rosa 1', 'San Protaso');
+INSERT INTO donazassociazione (codiceD, data, punti, donatore, supermercato, associazione) VALUES ('12335', '13-12-2020',50, '9876543213', 'Via Monte Rosa 1', 'San Protaso');
+
